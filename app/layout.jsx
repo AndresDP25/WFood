@@ -21,7 +21,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${lora.variable} ${lora.poppins}`}>{children}</body>
+      <body className={`${lora.variable} ${poppins.variable}`}>{children}</body>
     </html>
   );
 }

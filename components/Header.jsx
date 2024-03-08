@@ -29,7 +29,7 @@ const Header = () => {
 
   return (
     <header className={` ${
-      active? 'bg-black-heavy py-4' : 'bg-none py-8'}
+      active ? 'bg-black-heavy py-4' : 'bg-none py-8'}
       fixed top-0 right-0 left-0 w-full z-50  transition-all duration-200`}
     >
       <div className="container mx-auto">
@@ -37,11 +37,11 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* logo */}
           <Link href='/'>
-            <Image src='/logo.svg' width={75} height={30} alt="" />
+            <Image src='/logo.svg' width={75} height={30} alt="" 
+            style={{ width: '100%', height: 'auto' }}/>
           </Link>
           {/* nav  */}
-          <Nav containerStyles='hidden xl:flex gap-x-12 text-white'
-          linkStyles='capitalize' />
+          <Nav containerStyles='hidden xl:flex gap-x-12 text-white' linkStyles='capitalize' />
           {/* btn  */}
           <ScrollLink to="reservation" smooth={true}>
             <Button variant='orange' size='sm'>Book a table</Button>
