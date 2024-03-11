@@ -21,18 +21,20 @@ const links = [
     icon: <BiSolidFoodMenu />,
     path: 'menu',
     name: 'menu',
-    offset: 0
-  },{
+    offset: -30
+  },
+  {
+    icon: <RiHomeFill />,
+    path: 'reservation',
+    name: 'contact',
+    offset: -150
+  },
+  {
     icon: <FaUsers />,
     path: 'about',
     name: 'about',
-    offset: 0
-  },{
-    icon: <RiHomeFill />,
-    path: 'contact',
-    name: 'contact',
-    offset: 0
-  },
+    offset: -80
+  }
 ]
 
 const NavMobile = ({ containerStyles, iconStyles, linkStyles }) => {
@@ -71,6 +73,7 @@ const NavMobile = ({ containerStyles, iconStyles, linkStyles }) => {
                   offset={link.offset} 
                   smooth={false}
                   className='flex items-center gap-x-3'
+                  onClick={() => setIsOpen(false)}
                 >
                   <div className={`${iconStyles}`}>{link.icon}</div>
                   <div className={`${linkStyles}`}>{link.name}</div>
@@ -79,8 +82,8 @@ const NavMobile = ({ containerStyles, iconStyles, linkStyles }) => {
             })}
           </div>
           {/* btn */}
-          <ScrollLink to='reservation' smooth offset={-150}>
-            <Button variant='orange'>Book a table</Button>
+          <ScrollLink to='reservation' smooth={true}>
+            <Button variant='orange' onClick={() => setIsOpen(false)}>Book a table</Button>
           </ScrollLink>
         </div>
       </aside>

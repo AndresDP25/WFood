@@ -42,7 +42,7 @@ const Header = () => {
           {/* nav  */}
           <Nav containerStyles='hidden xl:flex gap-x-12 text-white' linkStyles='capitalize text-sm' />
           {/* btn  */}
-          <ScrollLink to="reservation" smooth={true}>
+          <ScrollLink to="reservation" smooth={true} offset={-100}>
             <Button variant='orange' size='sm'>Book a table</Button>
           </ScrollLink>
           {/* mobile nav  */}
