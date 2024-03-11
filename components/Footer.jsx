@@ -12,19 +12,19 @@ const Footer = () => {
         initial='hidden'
         whileInView={'show'}
         viewport={{ once: false, amount: 0 }}
-        className='bg-footer bg-cover bg-no-repeat text-white pt-16'
+        className='bg-footer bg-cover bg-no-repeat text-white pt-14'
         id='contact'
     >
         <div className="container mx-auto">
-            <div className='flex flex-col justify-between xl:flex-row'>
+            <div className='flex flex-col xl:flex-row'>
                 {/* logo */}
-                <div className='w-[300px] mb-8 xl:mb-0'>
+                <div className='w-[200px] mb-8 xl:mb-0'>
                     <Link href='/'>
                         <Image src='/logo.svg' width={67} height={27} alt=''/>
                     </Link>
                 </div>
                 {/* grid items */}
-                <div className='flex-1 grid grid-cols-1 xl:grid-cols-3 gap-[50px] mb-8 xl:mb-16'>
+                <div className='flex-1 grid grid-cols-1 xl:grid-cols-3 gap-[40px] mb-8 xl:mb-16'>
                     {/* blog */}
                     <div>
                         <h4 className='font-semibold mb-5'>Blog</h4>
@@ -42,11 +42,6 @@ const Footer = () => {
                             <li>
                                 <Link href='/'>
                                     Tempor, volutpat nulla sed posuere orci ac diam integer
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href='/'>
-                                    Ultrices consectetur orci ultrices viverra mauris laoreet tincidunt at
                                 </Link>
                             </li>
                         </ul>
@@ -68,11 +63,6 @@ const Footer = () => {
                             <li>
                                 <Link href='/'>
                                     Tempor, volutpat nulla sed posuere orci ac diam integer
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href='/'>
-                                    Ultrices consectetur orci ultrices viverra mauris laoreet tincidunt at
                                 </Link>
                             </li>
                         </ul>

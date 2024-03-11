@@ -31,16 +31,16 @@ const menu = [
 
 const Menu = () => {
   return (
-    <section className='relative py-12 bg-no-repeat xl:bg-cover bg-menu' id='menu'>
+    <section className='relative py-12 bg-no-repeat xl:bg-contain bg-menu' id='menu'>
       <div className="container mx-auto">
         <motion.div 
           variants={fadeIn('left', 0.3)}
           initial='hidden'
           whileInView={'show'}
           viewport={{ once: false, amount: 0.2 }}
-          className='max-w-[430px] mx-auto text-center xl:text-right'
+          className='max-w-[430px] pt-5 mx-auto text-center xl:text-right xl:my-10'
         >
-          <h2 className='mb-3'>Favorite Menu</h2>
+          <h2 className='mb-2'>Favorite Menu</h2>
           <Link href='/' 
           className='text-green flex justify-center xl:justify-end items-center mb-16'>
             View all
