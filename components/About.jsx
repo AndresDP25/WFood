@@ -6,7 +6,7 @@ import { Button } from './ui/button'
 
 const About = () => {
   return (
-    <section className='grid grid-cols-1 xl:grid-cols-2 gap-x-[60px] p-8 md:p-12 xl:p-18 items-center h-screen md:h-auto'>
+    <section className='grid grid-cols-1 xl:grid-cols-2 gap-x-[60px] p-8 md:p-12 xl:p-18 items-center'>
         {/* text */}
         <motion.div 
             variants={fadeIn('right', 0.2)}

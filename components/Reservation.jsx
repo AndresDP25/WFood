@@ -18,7 +18,7 @@ const Reservation = () => {
         initial='hidden'
         whileInView={'show'}
         viewport={{ once: false, amount: 0.2 }}
-        className='bg-black w-full xl:max-w-[651px] min-h-[388px] p-6 md:p-11 xl:p-12 xl:mb-16 h-screen md:h-auto'
+        className='bg-black w-full xl:max-w-[651px] min-h-[388px] p-6 md:p-11 xl:p-12 xl:mb-16'
       >
           <h2 className='text-white mb-7 capitalize'>Book a table</h2>
           <ReservationForm />
