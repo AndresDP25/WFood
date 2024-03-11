@@ -30,7 +30,7 @@ const ReservationForm = () => {
 
   return (
     <form className="flex flex-col gap-y-10">
-        <div className="grid gap-[30px]">
+        <div className="grid gap-[20px]">
         <div className="grid grid-cols-1 xl:grid-cols-2 gap-[30px]">
             <div>
             <Label htmlFor="firstname">first name</Label>

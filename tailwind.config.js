@@ -11,13 +11,13 @@ module.exports = {
   theme: {
     container: {
       center: true,
-      padding: "15px",
+      padding: "12px",
     },
     screens: {
-      sm: '640px',
-      md: '768px',
-      lg: '960px',
-      xl: '1200px',
+      sm: '360px',
+      md: '640px',
+      lg: '768px',
+      xl: '900px',
     },
     colors: {
       body: '#e5e5e5',
@@ -35,8 +35,8 @@ module.exports = {
         poppins: ['var(--font-poppins)', 'sans-serif'],
       },
       backgroundImage: {
-        hero: 'url(/hero/bg.png)',
-        menu: 'url(/menu/bg.png)',
+        hero: 'url(/hero/bg_1_1.png)',
+        menu: 'url(/menu/bg_1_1.png)',
         reservation: 'url(/reservation/bg.png)',
         footer: 'url(/footer/bg.png)',
       },

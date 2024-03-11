@@ -9,17 +9,17 @@ const links = [
   {
     path: 'menu',
     name: 'menu',
-    offset: -50
+    offset: -40
+  },
+  {
+    path: 'reservation',
+    name: 'contact',
+    offset: -0
   },
   {
     path: 'about',
     name: 'about',
-    offset: -150
-  },
-  {
-    path: 'contact',
-    name: 'contact',
-    offset: -0
+    offset: -120
   },
 ]
 

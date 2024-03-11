@@ -31,20 +31,20 @@ const menu = [
 
 const Menu = () => {
   return (
-    <section className='relative py-12 xl:py-24 bg-menu' id='menu'>
+    <section className='relative py-12 bg-no-repeat xl:bg-cover bg-menu' id='menu'>
       <div className="container mx-auto">
         <motion.div 
           variants={fadeIn('left', 0.3)}
           initial='hidden'
           whileInView={'show'}
           viewport={{ once: false, amount: 0.2 }}
-          className='max-w-[570px] mx-auto text-center xl:text-right'
+          className='max-w-[430px] mx-auto text-center xl:text-right'
         >
           <h2 className='mb-3'>Favorite Menu</h2>
           <Link href='/' 
           className='text-green flex justify-center xl:justify-end items-center mb-16'>
             View all
-            <IoIosArrowRoundForward className='text-3xl' />
+            <IoIosArrowRoundForward className='text-2xl' />
           </Link>
         </motion.div>
         {/* menu grid */}
@@ -53,25 +53,25 @@ const Menu = () => {
           initial='hidden'
           whileInView={'show'}
           viewport={{ once: false, amount: 0.2 }}
-          className='grid grid-cols-1 gap-[30px] md:grid-cols-3 md:gap-[15px] xl:grid-cols-4'
+          className='grid grid-cols-1 gap-[23px] md:grid-cols-3 md:gap-[16px] xl:grid-cols-4'
         >
           {menu.map((item, index) => {
             return (
-            <div key={index} className='max-w-[270px] bg-white shadow-xl mx-auto xl:mx-0 group'>
+            <div key={index} className='max-w-[230px] bg-white shadow-xl mx-auto xl:mx-0 group'>
               {/* img */}
               <div className='overflow-hidden'>
-                <Image src={item.img} width={270} height={270} alt='' 
+                <Image src={item.img} width={210} height={210} alt='' 
                 className='group-hover:scale-110 transition-all duration-300'
                 />
               </div>
               {/* title & price */}
-              <div className='pt-[20px] pb-[28px] px-[30px]'>
+              <div className='pt-[20px] pb-[28px] px-[20px]'>
                 <Link href='/'>
-                  <h3 className='font-poppins text-black mb-[14px]'>
+                  <h3 className='font-poppins text-black mb-[10px]'>
                     {item.title}
                   </h3>
                 </Link>
-                <div className="text-xl font-poppins font-semibold text-orange">
+                <div className="text-base font-poppins font-semibold text-orange">
                   {item.price}
                 </div>
               </div>

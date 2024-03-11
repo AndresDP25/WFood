@@ -20,7 +20,7 @@ const Footer = () => {
                 {/* logo */}
                 <div className='w-[300px] mb-8 xl:mb-0'>
                     <Link href='/'>
-                        <Image src='/logo.svg' width={90} height={36} alt=''/>
+                        <Image src='/logo.svg' width={67} height={27} alt=''/>
                     </Link>
                 </div>
                 {/* grid items */}

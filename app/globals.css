@@ -15,16 +15,16 @@
         @apply font-lora font-bold;
     }
     h1 {
-        @apply text-[62px] leading-[84px];
+        @apply text-[46px] leading-[67px];
     }
     h2 {
-        @apply text-[32px] leading-[46px];
+        @apply text-[24px] leading-[34px];
     }
     h3 {
-        @apply text-[20px] leading-[30px];
+        @apply text-[15px] leading-[22px];
     }
     p {
-        @apply text-black/80 leading-8;
+        @apply text-black/80 text-[12px] leading-6;
     }
     a {
         @apply text-white hover:text-orange transition-all duration-300 cursor-pointer

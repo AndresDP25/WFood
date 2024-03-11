@@ -7,18 +7,18 @@ import { Button } from "./ui/button"
 
 const Hero = () => {
   return (
-    <section className="bg-hero bg-no-repeat relative xl:bg-cover xl:h-[1098px] py-40 pb-32 xl:py-0" id="home">
+    <section className="bg-hero bg-no-repeat relative xl:bg-cover xl:h-[823px] py-40 pb-32 xl:py-0" id="home">
         <div className="container mx-auto">
             {/* text & img */}
-            <div className="flex items-center xl:h-[960px]">
+            <div className="flex items-center xl:h-[700px]">
                 {/* text */}
-                <div className="w-full xl:max-w-[460px] text-center xl:text-left">
+                <div className="w-full xl:max-w-[345px] text-center xl:text-left">
                     <motion.h1
                         variants={fadeIn('down', 0.2)}
                         initial='hidden'
                         whileInView={'show'}
                         viewport={{once: false, amount: 0.4}}
-                        className="text-white font-semibold mb-7"
+                        className="text-white font-semibold mb-5"
                     >
                         A taste of local<br /> Flavours
                     </motion.h1>
@@ -27,7 +27,7 @@ const Hero = () => {
                         initial='hidden'
                         whileInView={'show'}
                         viewport={{once: false, amount: 0.4}}
-                        className="text-white font-semibold mb-7"
+                        className="text-white font-semibold mb-5"
                     >
                         by: <span className="text-orange">Wildan Wari</span>
                     </motion.p>
@@ -36,7 +36,7 @@ const Hero = () => {
                         initial='hidden'
                         whileInView={'show'}
                         viewport={{once: false, amount: 0.4}}
-                        className="text-white mb-12 max-w-lg mx-auto xl:max-w-none xl:mx-0"
+                        className="text-white mb-8 max-w-lg mx-auto xl:max-w-none xl:mx-0"
                     >
                         Posuere amet, sed vitae condimentum accusmsan aliquam et, aliquam.
                         Tellus in fusce vel gravida lobortis diam dis ut. Bibendum senectus urna, in ultricies sed lorem natoque. Risus pharetra
@@ -56,21 +56,21 @@ const Hero = () => {
                     initial='hidden'
                     whileInView={'show'}
                     viewport={{once: false, amount: 0.1}}
-                    className="hidden xl:flex xl:absolute xl:top-[200px] xl:right-0"
+                    className="hidden xl:flex xl:absolute xl:top-[150px] xl:right-0"
                 >
-                    <Image src='/hero/plate.png' width={756} height={682} alt=""/>
+                    <Image src='/hero/plate.png' width={567} height={511} alt=""/>
                 </motion.div>
             </div>
         </div>
         {/* cofee img */}
         <motion.div 
-            variants={fadeIn('up', 1.2)}
+            variants={fadeIn('up', 1)}
             initial='hidden'
             whileInView={'show'}
             viewport={{once: false, amount: 0.1}}
-            className="hidden xl:flex xl:relative xl:-top-36"
+            className="hidden xl:flex xl:relative xl:top-[-6rem]"
         >
-            <Image src='/hero/coffee.png' width={386} height={404} alt="" />
+            <Image src='/hero/coffee.png' width={289} height={303} alt="" />
         </motion.div>
     </section>
   )

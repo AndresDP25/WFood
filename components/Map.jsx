@@ -76,7 +76,7 @@ const Map = () => {
                                     <p className="leading-snug">{marker.subtitle}</p>
                                 </div>
                                 <div className="flex-1">
-                                    <Image src={marker.image} width={130} height={160} alt=""/>
+                                    <Image src={marker.image} width={98} height={120} alt=""/>
                                 </div>
                             </div>
                         </Popup>
